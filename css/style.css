@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    background-color: #2E3A46;
+}
+.container > img {
+    width: 70px;
+    margin: 15px;
+}
+
+.containerMain {
+   background-color: #26303a; 
+   height: calc(100vh - 100px);
+}
