@@ -23,11 +23,13 @@
         <div class="containerMain">
             <?php
                 foreach ($data as $dato) {
-                    echo "<img src='{$dato['poster']}' alt='$dato[title]'>";
-                    echo "<h3> {$dato['author']}</h3>";
-                    echo "<p>{$dato['author']}</p>";
-                    echo "<p>{$dato['genre']}</p>";
-                    echo "<p>{$dato['year']}</p>";
+                    echo "<div class='element'>";
+                        echo "<img src='{$dato['poster']}' alt='$dato[title]'>";
+                        echo "<h3> {$dato['title']}</h3>";
+                        echo "<h4>{$dato['author']}</h4>";
+                        echo "<h4>{$dato['genre']}</h4>";
+                        echo "<h4>{$dato['year']}</h4>";
+                    echo "</div>";
                 }
             ?>
         </div>

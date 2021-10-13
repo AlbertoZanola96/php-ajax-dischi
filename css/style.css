@@ -9,12 +9,43 @@
     height: 100px;
     background-color: #2E3A46;
 }
+
 .container > img {
     width: 70px;
     margin: 15px;
 }
 
-.containerMain {
-   background-color: #26303a; 
-   height: calc(100vh - 100px);
+main {
+    width: 100%;
+    background-color: #26303a; 
+    height: calc(100vh - 100px);
 }
+
+.containerMain {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.element {
+    width: 300px;
+    height: 400px;
+    background-color: #2E3A46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 90px 0 90px;
+}
+
+.element img {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+}
+

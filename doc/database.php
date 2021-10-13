@@ -43,13 +43,6 @@
             "year" => "2002",
         ],
         [
-            "poster" => "https://upload.wikimedia.org/wikipedia/en/9/97/Eric_Clapton_OMCOMR.jpg",
-            "title" => "One more car, one more raider",
-            "author" => "Eric Clapton",
-            "genre" => "Rock",
-            "year" => "2002",
-        ],
-        [
             "poster" => "https://images-na.ssl-images-amazon.com/images/I/51rggtPgmRL.jpg",
             "title" => "Made in Japan",
             "author" => "Deep Purple",
