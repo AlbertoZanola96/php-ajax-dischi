@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -44,8 +45,18 @@ main {
 }
 
 .element img {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 250px;
     height: 250px;
+}
+
+.element  > h3 {
+    color: rgb(85, 85, 85);
+    padding: 10px;
+}
+
+.element > h4 {
+    color: rgb(85, 85, 85);
+    padding: 2px;
 }
 
