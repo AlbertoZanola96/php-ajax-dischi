@@ -1,3 +1,9 @@
+<?php
+    include __DIR__ . '/doc/database.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +21,15 @@
     </header>
     <main>
         <div class="containerMain">
-        
-
-        
+            <?php
+                foreach ($data as $dato) {
+                    echo "<img src='{$dato['poster']}' alt='$dato[title]'>";
+                    echo "<h3> {$dato['author']}</h3>";
+                    echo "<p>{$dato['author']}</p>";
+                    echo "<p>{$dato['genre']}</p>";
+                    echo "<p>{$dato['year']}</p>";
+                }
+            ?>
         </div>
     </main>
 
