@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,20 +21,17 @@
         </header>
         <main>
             <div class="containerMain">
-                <?php
-                    foreach ($data as $dato) {
-                        echo "<div class='element'>";
-                            echo "<img src='{$dato['poster']}' alt='$dato[title]'>";
-                            echo "<h3> {$dato['title']}</h3>";
-                            echo "<h4>{$dato['author']}</h4>";
-                            echo "<h4>{$dato['genre']}</h4>";
-                            echo "<h4>{$dato['year']}</h4>";
-                        echo "</div>";
-                    }
-                ?>
+                <div class="element" v-for="(disco, index) in album" :key="index">
+                    <img :src="disco.poster" :alt="disco.img">    
+                    <h3>{{disco.title}}</h3> 
+                    <h4>{{disco.author}}</h4>
+                    <h4>{{disco.year}}</h4>
+                </div>
+
             </div>
         </main>
     </div>
     <script src="js/main.js"></script>
 </body>
 </html> 
+
